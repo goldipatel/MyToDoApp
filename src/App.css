@@ -1,67 +1,97 @@
 .App {
-  position: relative;
-  /* text-align: center; */
-  height: 500px;
-  width: 350px;
-  background-color: rgb(168, 240, 155);
-  border-radius: 10px;
-
-  /* padding: 0 10px; */
-  overflow: hidden;
+  width: 450px;
+  background-color: lightseagreen;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  box-shadow: 0px 0px  50px rgba(0, 0, 0, 0.3);
 }
 
-.FirstBox {
-  width: 100%;
-  /* background-color: white; */
-  /* text-align: center; */
-  padding-left: 5px;
+/* .header h2 {
+  color: rgb(254, 254, 254);
 }
-.secondBox {
-  border: none;
-  position: relative;
+
+.todo-input {
   width: 100%;
-  /* padding: 20px; */
+  padding: 1rem 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 0.5rem
 }
-.btn {
-  width: 30%;
-  background-color: rgb(110, 110, 245);
-  padding: 0.5rem;
-  text-align: center;
-  border-radius: 10px;
-}
-.input {
+
+.todo-inp-box, .todo-btn-add {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  outline: none;
   border: none;
-  width: 80%;
-  padding: 0.8rem;
-  border-radius: 5px;
+  padding: 0.5rem;
 }
-.thirdBox {
-  padding-left: 10px;
+
+.todo-inp-box {
+  color: green;
+  font-weight: 500;
 }
+
+.todo-btn-add {
+  background-color: aquamarine;
+  color: green;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+.todos {
+  background-color: beige;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 3px solid lightcoral;
+}
+
 .tasks {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
 }
+
 .task {
   display: flex;
-  gap: 2px;
+  gap: 0.5rem;
 }
-.task div {
-  /* width: 100%; */
+.task-description {
   flex: 1;
-  background-color: white;
-  padding: 7px;
-  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: blanchedalmond;
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 1.2em;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  border: 2px dashed coral;
 }
 
 .task button {
-  border-radius: 18px;
+  height: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  outline: none;
   border: none;
-  background-color: rgb(14, 179, 191);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
 }
+
+.check-button {
+  background-color: lightgreen;
+}
+
+.cross-button {
+  background-color: lightcoral;
+}
+
+.done {
+  border: 2px dashed darkcyan;
+} */

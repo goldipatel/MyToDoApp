@@ -1,22 +1,39 @@
 import "./App.css";
-import Header from "./components/Header";
-import ToDos from "./components/ToDos";
-import Middle from "./components/Middle";
-import { useState } from "react";
-import { useEffect } from "react";
+import HeaderSection from "./components/HeaderSection";
+import InputSection from "./components/InputSection";
+import ToDoSection from "./components/ToDoSection";
+import { useEffect, useState } from "react";
 
 function App() {
   const [todos, setTodos] = useState([]);
+
+  // load data at start
   useEffect(() => {
-    console.log("todos = ", todos);
+    const savedTodos = JSON.parse(localStorage.getItem("todos"));
+    if (savedTodos) {
+      setTodos(savedTodos);
+    }
+  }, []);
+
+  // update the data
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
+
   return (
     <div className="App">
-      <Header />
-      <Middle todos={todos} setTodos={setTodos} />
-      <ToDos todos={todos} setTodos={setTodos} />
+      <HeaderSection />
+      <InputSection todos={todos} setTodo={setTodos} />
+      <ToDoSection todos={todos} setTodo={setTodos} />
     </div>
   );
 }
 
 export default App;
+
+// function goldi(champu) {
+//   console.log("goldi is ", champu);
+// }
+
+// goldi("not champu");

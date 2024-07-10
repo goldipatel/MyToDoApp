@@ -1,0 +1,40 @@
+
+
+.todo-input {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.todo-inp-box,
+.todo-btn-add {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+.todo-inp-box {
+    color: green;
+    font-weight: 500;
+}
+
+.todo-btn-add {
+    background-color: aquamarine;
+    color: green;
+    font-weight: 800;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.disabled {
+    background-color: rgb(196, 196, 196);
+    color: rgb(114, 114, 114);
+}
